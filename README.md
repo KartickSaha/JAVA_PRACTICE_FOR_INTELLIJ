@@ -1,0 +1,2 @@
+# JAVA_PRACTICE_FOR_INTELLIJ
+Learning Basic Java
