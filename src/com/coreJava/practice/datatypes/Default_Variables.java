@@ -23,7 +23,7 @@ public class Default_Variables {
         System.out.println("ShortVariable Default Value " + shortVariables);
         System.out.println("IntVariable Default Value " + intVariables);
         System.out.println("LongVariable Default Value " + longVariables);
-        System.out.println("FloatVariable Default Value " + floatVariables );
+        System.out.println("FloatVariable Default Value " + floatVariables);
         System.out.println("DoubleVariable Default Value " + doubleVariables);
         System.out.println("BooleanVariable Default Value " + booleanVariables);
         System.out.println("CharVariable Default Value " + charVariables);
@@ -41,44 +41,45 @@ public class Default_Variables {
     }
 
     // Here assign the value to the variables.
-    public static void globalByteMethod(){
+    public static void globalByteMethod() {
         byteVariables = 100;
         System.out.println("Globally declared byte Variable assigning here " + byteVariables);
     }
 
-    public static void globalShortMethod(){
+    public static void globalShortMethod() {
         shortVariables = 10000;
         System.out.println("Globally declared short Variable assigning here " + shortVariables);
     }
 
-    public static void globalIntMethod(){
+    public static void globalIntMethod() {
         intVariables = 1000000000;
         System.out.println("Globally declared int Variable assigning here " + intVariables);
     }
 
-    public static void globalLongMethod(){
+    public static void globalLongMethod() {
         longVariables = 1000000000000L;
         System.out.println("Globally declared long Variable assigning here " + longVariables);
     }
 
-    public static void globalFloatMethod(){
+    public static void globalFloatMethod() {
         floatVariables = 100000.99f;
         System.out.println("Globally declared float Variable assigning here " + floatVariables);
     }
 
-    public static void globalDoubleMethod(){
+    public static void globalDoubleMethod() {
         doubleVariables = 10000000.99;
         System.out.println("Globally declared double Variable assigning here " + doubleVariables);
     }
 
-    public static void globalBooleanMethod(){
+    public static void globalBooleanMethod() {
         booleanVariables = true;
         System.out.println("Globally declared boolean Variable assigning here " + booleanVariables);
     }
 
-    public static void globalCharMethod(){
+    public static void globalCharMethod() {
         charVariables = 'G';
         System.out.println("Globally declared char Variable assigning here " + charVariables);
+        System.out.println("Globally declared char Variable assigning here " + charVariables);
     }
-
 }
+
