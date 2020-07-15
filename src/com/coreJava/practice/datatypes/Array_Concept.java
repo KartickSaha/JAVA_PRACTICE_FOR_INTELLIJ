@@ -1,8 +1,13 @@
 package com.coreJava.practice.datatypes;
 
+import java.sql.Array;
+import java.util.Arrays;
+
 public class Array_Concept {
     public static void main(String[] args) {
-        int [] arrayOne = new int[5];
+
+        // Declare int Array
+        int[] arrayOne = new int[5];
         arrayOne[0] = 100;
         arrayOne[1] = 90;
         arrayOne[2] = 80;
@@ -15,8 +20,25 @@ public class Array_Concept {
         System.out.println("3 index : " + arrayOne[3]);
         System.out.println("4 index : " + arrayOne[4]);
 
+        // Size of Array
+        int lengthOfArrayOne = arrayOne.length;
 
-        String [] arrayTwo = new String[5];
+        //Best way to print out
+        System.out.println("Length_Of_One :" + lengthOfArrayOne);
+        for (int i = 0; i < lengthOfArrayOne; i++) {
+            System.out.println("Print array element :" + arrayOne[i]);
+        }
+
+        //Apply sort method for reverse from java utils
+
+        Arrays.sort(arrayOne);
+        for (int i = 0; i < lengthOfArrayOne; i++) {
+            System.out.println("Print array element :" + arrayOne[i]);
+        }
+
+
+        // Declare String Array
+        String[] arrayTwo = new String[5];
         arrayTwo[0] = "Kartick";
         arrayTwo[1] = "Raj";
         arrayTwo[2] = "Ashik";
@@ -29,5 +51,16 @@ public class Array_Concept {
         System.out.println("3 index : " + arrayTwo[3]);
         System.out.println("4 index : " + arrayTwo[4]);
 
+        //Print out all of them in one line by appling toString() method
+        System.out.println("Print Out Array Element In One Line :"+ Arrays.toString(arrayTwo));
+
+        // Size of Array
+        int lengthOfArrayTwo = arrayTwo.length;
+        System.out.println("Length_Of_Two :" + lengthOfArrayOne);
+
+        // Best Way to Print out
+        for (int i =0; i<arrayTwo.length; i++) {
+            System.out.println("Print array element    :  " + arrayTwo[i]);
+        }
     }
 }
