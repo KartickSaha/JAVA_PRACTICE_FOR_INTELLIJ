@@ -4,12 +4,13 @@ import static com.sun.deploy.util.SystemUtils.getSimpleName;
 
 public class Method_Demo {
     //One Way to call non static method from main method
-    public static Method_Demo method_demo = new Method_Demo();
+    //public static Method_Demo method_demo = new Method_Demo();
 
     public static void main(String[] args) {
         methodOne();
-        //Another Way to call non static method from main method
-        //Method_Demo method_demo = new Method_Demo();
+        //Another Way to call non static method from main method by creating the object/
+        // create and initialize the object of the class.
+        Method_Demo method_demo = new Method_Demo();
         method_demo.methodTwo();
         method_demo.methodThree();
         method_demo.methodFour();
