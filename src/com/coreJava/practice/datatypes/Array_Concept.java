@@ -62,5 +62,10 @@ public class Array_Concept {
         for (int i =0; i<arrayTwo.length; i++) {
             System.out.println("Print array element    :  " + arrayTwo[i]);
         }
+
+        // Reverse String using for loop
+        for(int j=arrayTwo.length-1; j>=0; j--){
+            System.out.println("Reverse String element printing : " +arrayTwo[j]);
+        }
     }
 }
