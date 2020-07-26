@@ -6,7 +6,7 @@ until a particular condition is satisfied. */
 
 /*Syntax Of For Loop
 
-for(initialization; condition ; increment/decrement)
+for(initialization(int i = 0); condition(i<10) ; increment/decrement(i++)
 {
  printout statement(s);
 }
