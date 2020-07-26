@@ -28,28 +28,44 @@ public class CarEncaptulationConceptPartOne {
     //Creating getterMethod to get the value of the variable from setter method.
     // Here "make" is a variable.
     public String getmake(){
-        return this.make;
+        return make;
     }
 
     public void setModel(String model){
         this.model = model;
     }
     public String getmodel(){
-        return this.model;
+        return model;
     }
 
-    public void setyear(int year){
+  /*  public void setyear(int year){
         this.year = year;
+    }*/
+   /* public int getyear(){
+        return this.year;
+    }*/
+
+
+    // Another way to set year which is more functional.
+    public void setYearAnotherWay(int year){
+        if (year > 1900){
+            this.year = year;
+        } else{
+            System.out.println("This Year Is Not Valid");
+        }
     }
     public int getyear(){
-        return this.year;
+        return year;
     }
+
+
+
 
     public void setColor(String color){
         this.color = color;
     }
     public String getcolor(){
-        return this.color;
+        return color;
     }
 
 }
