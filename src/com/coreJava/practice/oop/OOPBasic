@@ -1,0 +1,195 @@
+1.What is OOP?
+
+Object-oriented programming System(OOPs) is a programming paradigm
+based on the concept of “objects” that contain data and methods.
+The primary purpose of object-oriented programming is to increase
+the flexibility and maintainability of programs. Object oriented
+programming brings together data and its behaviour(methods)
+in a single location(object) makes it easier to understand how a program works.
+
+2. What is an Object?
+Object is a bundle of data and its behaviour(often known as methods).
+Objects have two characteristics: They have states and behaviors.
+Examples of states and behaviors:
+Example:
+Object: House
+State: Address, Color, Area
+Behavior: Open door, close door
+
+3. What are the Characteristics of Objects?
+a. Abstraction
+b. Encaptulation
+c. Message passing
+
+4. What is Abstraction?
+Abstraction is a process where you show only "relevant" data and "hide"
+unnecessary details of an object from the user.
+
+5. What is Encaptulation?
+Encaptulation simply means binding object state (fields) and behavior (methods) together.
+If you are creating class, you are doing Encaptulation.
+
+5.1 How to achieve Encaptulation in a class?
+a) Make the instance variables private so that they cannot be accessed
+ directly from outside the class. You can only set and get values of
+ these variables through the methods of the class.
+b) Have getter and setter methods in the class to set and get the values of the fields.
+
+6. What is Message passing?
+A single of Object by itself may not be very useful. An application contains many objects.
+One object interacts with other object by invoking methods on that object. It is also reffered
+to as Method Invocation.
+
+7. What is Class?
+A class can be considered as a blueprint using which you can as many objects as you like.
+
+8. What is Constructor?
+Constructor looks like a method but it is in fact not a method.
+It’s name is same as class name and it does not return any value.
+
+Examples Of Default Constructor:
+MyClass obj = new MyClass();
+If you look at the right side of this statement,
+we are calling the default constructor of class myClass to create
+a new object (or instance).
+
+We can also have parameters in the constructor,
+such constructors are known as parametrized constructors.
+
+ EXAMPLE OF CONSTRUCTOR:
+
+ public class ConstructorExample {
+
+    int age;
+    String name;
+
+    //Default constructor
+    ConstructorExample(){
+ 	this.name="Chaitanya";
+ 	this.age=30;
+    }
+
+    //Parameterized constructor
+    ConstructorExample(String n,int a){
+ 	this.name=n;
+ 	this.age=a;
+    }
+    public static void main(String args[]){
+ 	ConstructorExample obj1 = new ConstructorExample();
+ 	ConstructorExample obj2 =
+ 		       new ConstructorExample("Steve", 56);
+ 	System.out.println(obj1.name+" "+obj1.age);
+ 	System.out.println(obj2.name+" "+obj2.age);
+    }
+ }
+
+ 9.What is Inheritance?
+ The process by which one class acquires the properties and functionalities of another
+ class is called inheritance.
+ Inheritance provides the idea of reusability of code and each sub class defines only
+ those features that are unique to it, rest of the features can be inherited from the parent class.
+
+ So,Inheritance is a process of defining a new class based on an existing class
+ by extending its common data members and methods. Inheritance allows us to reuse of code,
+ it improves reusability in your java application.
+ The parent class is called the base class or super class.
+ The child class that extends the base class is called the derived class or sub class or child class.
+
+ 10. How many type of Inheritnace in java?
+ Single Inheritance: refers to a child and parent class relationship
+ where a class extends the another class.
+
+ Multilevel inheritance: refers to a child and parent class relationship
+ where a class extends the child class.
+ For example class A extends class B and class B extends class C.
+
+ Hierarchical inheritance: refers to a child and parent class relationship
+ where more than one classes extends the same class.
+ For example, class B extends class A and class C extends class A.
+
+ Multiple Inheritance: refers to the concept of one class extending more than one classes,
+ which means a child class has two parent classes. Java doesn’t support multiple inheritance.
+
+ 11. What is Polymorphism?
+ Polymorphism is a object oriented programming feature that allows us to
+ perform a single action in different ways.
+
+ 12. How many types of polymorphism in java?
+ a) Static Polymorphism
+ b) Dynamic Plymorphism
+
+ 13. What is Static Polymorphism?
+ Polymorphism that is resolved during compiler time is known as static polymorphism.
+ Method overloading can be considered as static polymorphism.
+
+ 14. What is Dynamic Polymorphism?
+ Dynamic polymorphism is a process in which a call to an overridden method
+ is resolved at runtime. That's why it is called also runtime polymorphism.
+
+ 15. What is Method Overloading?
+ Method Overloading is a feature that allows a class to have more than one method
+ having the same name, if their argument lists are different is called method Overloading.
+
+ 16. What is Method Overriding?
+ Declaring a method in sub class which is already present in parent class is
+ known as method overriding.
+
+ 17. What is Abstract Class in java?
+ Abstract class: is a restricted class that cannot be used to create objects
+ (to access it, it must be inherited from another class).
+ The abstract keyword is a non-access modifier, used for classes and methods to declare
+ Abstract.
+
+18. What is Abstract Method in java?
+Abstract method: can only be used in an abstract class, and it does not have a body.
+The body is provided by the subclass (inherited from).
+An abstract class can have both abstract and regular methods.
+
+19. Give an example of abstract class and method.
+abstract class A{
+   abstract void myMethod();
+   void anotherMethod(){
+      //Does something
+   }
+}
+
+20. What we can not declared abstract?
+These cannot be abstract-
+---- Constructors
+---- Static methods
+---- Private methods
+---- Methods that are declared “final”
+
+
+21. What is Interface in java?
+Like a class, an interface can have methods and variables, but the methods
+declared in an interface are by default abstract (only method signature, no body).
+Remember:
+a. Java does not support Multiple Inheritance,
+   however a class can implement more than one interfaces.
+
+b. Interface is similar to an abstract class but it contains only abstract methods.
+
+c. Interfaces are created by using interface keyword instead of the keyword class
+
+d. We use implements keyword while implementing an interface.
+   (similar to extending a class with extends keyword)
+Note:
+a. All methods in an interface are implicitly public and abstract.
+   Using the keyword abstract before each method is optional.
+b. An interface may contain final variables.
+c. A class can extend only one other class, but it can implement any number of interfaces.
+d. When a class implements an interface it has to give the definition
+   of all the abstract methods of interface, else it can be declared as abstract class
+e. An interface reference can point to objects of its implementing classes.
+
+22. What is Generalization and Specialization in java?
+In order to implement the concept of inheritance in an OOPs,
+one has to first identify the similarities among different classes
+so as to come up with the base class.
+
+This process of identifying the similarities among different classes is called Generalization.
+Generalization is the process of extracting shared characteristics from
+two or more classes, and combining them into a generalized superclass.
+
+Specialization means creating new subclasses from an existing class.
