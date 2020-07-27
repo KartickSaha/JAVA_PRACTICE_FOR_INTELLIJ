@@ -10,8 +10,7 @@ for(initialization(int i = 0); condition(i<10) ; increment/decrement(i++)
 {
  printout statement(s);
 }
-
-* */
+*/
 
 public class For_Loop_Concept {
     public static void main(String[] args) {
