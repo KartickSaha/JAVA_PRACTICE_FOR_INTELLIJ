@@ -18,6 +18,7 @@ public class For_Loop_Concept {
        for_loop_01();
        for_loop_02();
        for_loop_array_03();
+       for_loop_array_04();
 
     }
 
@@ -37,6 +38,12 @@ public class For_Loop_Concept {
         int arr[] = {2,4,6,8,10,12,14,16};
         for(int i = 0; i<arr.length; i++){
             System.out.println("Result of array :"+ arr[i]);
+        }
+    }
+    public static  void for_loop_array_04(){
+        String [] cars ={"Mercedez","BMW","Audi","Honda","Toyota"};
+        for(String car:cars){
+            System.out.println("Result Of Car Name is :"+ car);
         }
     }
 }
